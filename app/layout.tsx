@@ -1,27 +1,23 @@
-import { ReactNode } from "react"; 
+import { ReactNode } from "react";
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 
 const outfit = Outfit({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"]
+  weight: ["400", "500", "600", "700"],
 });
 
 const ovo = Ovo({
   subsets: ["latin"],
-  weight: ["400"]
+  weight: ["400"],
 });
 
 export const metadata = {
-  title: "Portfolio - Warkineh",
+  title: "Portfolio - firaol",
   description: "",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode; 
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className="scroll-smooth">
       <body
