@@ -177,8 +177,8 @@ export default function Portfolio() {
       </div>
 
       <div className="relative z-10">
-        {/* Navigation Header */}
-        <header className="w-full fixed top-0 bg-gray-900/80 backdrop-blur-sm py-4 z-50 border-b border-gray-800">
+        {/* Navigation Header - Changed background to bright gradient */}
+        <header className="w-full fixed top-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 py-4 z-50 shadow-lg">
           <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
             {/* Logo */}
             <motion.div
@@ -187,7 +187,7 @@ export default function Portfolio() {
               transition={{ duration: 0.5 }}
               className="flex-shrink-0"
             >
-              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600">
                 Fira web.
               </span>
             </motion.div>
@@ -203,14 +203,14 @@ export default function Portfolio() {
                       onMouseLeave={() => setIsHoveringLink(false)}
                       className={`${
                         activeSection === item
-                          ? "text-blue-400"
-                          : "text-gray-300"
-                      } hover:text-blue-400 transition-colors duration-300 text-lg font-medium relative group`}
+                          ? "text-white font-bold"
+                          : "text-white/90"
+                      } hover:text-white transition-colors duration-300 text-lg font-medium relative group`}
                       aria-label={`Go to ${item} section`}
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
                       <span
-                        className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full ${
+                        className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full ${
                           activeSection === item ? "w-full" : ""
                         }`}
                       />
@@ -222,7 +222,7 @@ export default function Portfolio() {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-gray-300 hover:text-blue-400 focus:outline-none"
+              className="md:hidden text-white hover:text-white/80 focus:outline-none"
               onClick={toggleMenu}
               aria-label="Toggle menu"
             >
@@ -269,7 +269,7 @@ export default function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="fixed top-16 left-0 right-0 bg-gray-800/95 backdrop-blur-md z-40 md:hidden border-b border-gray-700"
+              className="fixed top-16 left-0 right-0 bg-gradient-to-r from-purple-500 to-pink-500 z-40 md:hidden shadow-md"
             >
               <ul className="flex flex-col space-y-4 p-6">
                 {["home", "about", "services", "contact"].map((item) => (
@@ -278,9 +278,9 @@ export default function Portfolio() {
                       onClick={() => scrollToSection(item)}
                       className={`${
                         activeSection === item
-                          ? "text-blue-400"
-                          : "text-gray-300"
-                      } hover:text-blue-400 transition-colors duration-300 text-lg font-medium w-full text-left py-2`}
+                          ? "text-white font-bold"
+                          : "text-white/90"
+                      } hover:text-white transition-colors duration-300 text-lg font-medium w-full text-left py-2`}
                       aria-label={`Go to ${item} section`}
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -859,7 +859,7 @@ export default function Portfolio() {
             className="max-w-4xl mx-auto"
           >
             <div className="mb-6">
-              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+              <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600">
                 Fira web.
               </span>
             </div>
