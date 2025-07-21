@@ -205,12 +205,12 @@ export default function Portfolio() {
                         activeSection === item
                           ? "text-white font-bold"
                           : "text-white/90"
-                      } hover:text-white transition-colors duration-300 text-lg font-medium relative group`}
+                      } hover:text-green-300 transition-colors duration-300 text-lg font-medium relative group`}
                       aria-label={`Go to ${item} section`}
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
                       <span
-                        className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full ${
+                        className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-green-400 transition-all duration-300 group-hover:w-full ${
                           activeSection === item ? "w-full" : ""
                         }`}
                       />
@@ -278,9 +278,9 @@ export default function Portfolio() {
                       onClick={() => scrollToSection(item)}
                       className={`${
                         activeSection === item
-                          ? "text-white font-bold"
+                          ? "text-green-300 font-bold"
                           : "text-white/90"
-                      } hover:text-white transition-colors duration-300 text-lg font-medium w-full text-left py-2`}
+                      } hover:text-green-300 transition-colors duration-300 text-lg font-medium w-full text-left py-2`}
                       aria-label={`Go to ${item} section`}
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -698,7 +698,7 @@ export default function Portfolio() {
                         📞
                       </div>
                       <div>
-                        <p className="text-gray-400 text-sm">Phone</p>
+                        <p className="text-gray-400 text-sm">Phone</p>{" "}
                         <p className="text-gray-100 group-hover:text-blue-400 transition-colors">
                           +251957034895
                         </p>
