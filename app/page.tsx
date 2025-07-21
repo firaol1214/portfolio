@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 // Corrected paths for static assets from the public directory
-import HomeImg from "/assets/Home1.png";
+import HomeImg from "/assets/Fira.jpg";
 import PortfolioImg from "/assets/portfol2.png"; // Assuming portfol2.png is the correct image for Personal Portfolio
 import DerartuImg from "/assets/derartu1.png";
 import GameImg from "/assets/game.jpg";
